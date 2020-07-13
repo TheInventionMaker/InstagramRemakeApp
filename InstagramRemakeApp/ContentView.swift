@@ -11,7 +11,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         HStack{
-            Text("Hello!")
+            Text("Hello")
+            Text("World")
         }
     }
 }
