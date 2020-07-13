@@ -20,6 +20,7 @@
 		FFC2CF3C24BC990000BFEDB3 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3B24BC990000BFEDB3 /* Heart.swift */; };
 		FFC2CF3E24BC990600BFEDB3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3D24BC990600BFEDB3 /* Profile.swift */; };
 		FFC2CF4024BC991000BFEDB3 /* Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3F24BC991000BFEDB3 /* Plus.swift */; };
+		FFC2CF4324BCAC7A00BFEDB3 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFC2CF4224BCAC7A00BFEDB3 /* Billabong.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FFC2CF3B24BC990000BFEDB3 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		FFC2CF3D24BC990600BFEDB3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FFC2CF3F24BC991000BFEDB3 /* Plus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plus.swift; sourceTree = "<group>"; };
+		FFC2CF4224BCAC7A00BFEDB3 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Billabong.ttf; path = ../../../Downloads/Billabong.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				FFC2CF3B24BC990000BFEDB3 /* Heart.swift */,
 				FFC2CF3D24BC990600BFEDB3 /* Profile.swift */,
 				FFC2CF3F24BC991000BFEDB3 /* Plus.swift */,
+				FFC2CF4224BCAC7A00BFEDB3 /* Billabong.ttf */,
 				FFC2CF0D24BC8E0E00BFEDB3 /* Assets.xcassets */,
 				FFC2CF1224BC8E0E00BFEDB3 /* LaunchScreen.storyboard */,
 				FFC2CF1524BC8E0E00BFEDB3 /* Info.plist */,
@@ -258,6 +261,7 @@
 				FFC2CF1424BC8E0E00BFEDB3 /* LaunchScreen.storyboard in Resources */,
 				FFC2CF1124BC8E0E00BFEDB3 /* Preview Assets.xcassets in Resources */,
 				FFC2CF0E24BC8E0E00BFEDB3 /* Assets.xcassets in Resources */,
+				FFC2CF4324BCAC7A00BFEDB3 /* Billabong.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

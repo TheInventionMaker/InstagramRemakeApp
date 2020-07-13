@@ -11,34 +11,69 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        TabView {
-            Home()
-              .tabItem {
-                 Image(systemName: "house.fill").font(.title)
-                 
-               }
-           Search()
-              .tabItem {
-                 Image(systemName: "magnifyingglass").font(.title)
-                 
-               }
-                
-            Plus()
-            .tabItem {
-                Image(systemName: "plus.app").font(.title)
-               
-             }
-            Heart()
-            .tabItem {
-                Image(systemName: "heart").font(.title)
-                   
-            }
-            Profile()
-            .tabItem {
-                Image(systemName: "person.circle").font(.title)
-                   
-            }
-        }.accentColor(Color.black)
+        NavigationView {
+             TabView {
+                       Home()
+                         .tabItem {
+                            Image(systemName: "house.fill").font(.title)
+                            
+                          }
+                      Search()
+                         .tabItem {
+                            Image(systemName: "magnifyingglass").font(.title)
+                            
+                          }
+                           
+                       Plus()
+                       .tabItem {
+                           Image(systemName: "plus.app").font(.title)
+                          
+                        }
+                       Heart()
+                       .tabItem {
+                           Image(systemName: "heart").font(.title)
+                              
+                       }
+                       Profile()
+                       .tabItem {
+                           Image(systemName: "person.circle").font(.title)
+                              
+                       }
+                       }.accentColor(Color.black)
+                //.navigationBarTitle("Welcome")
+            
+                .navigationBarItems(leading:
+                    HStack{
+                    Button(action: {
+                        print("camera hit")
+                        
+                    }, label: {
+                        Image(systemName: "camera.fill").foregroundColor(.black).font(.title)
+                    })
+                        Text("Instanote")
+                            .padding(.leading, 70)
+                            
+                       .font(Font.custom("Billabong", size: 50))
+                    },
+                    trailing:
+                    HStack(spacing: 20){
+                        Button(action: {
+                            print("tv hit")
+                        }, label: {
+                            Image(systemName: "tv").foregroundColor(.black).font(.title)
+                        })
+                        Button(action: {
+                        print("Paperplane hit")
+                    }, label: {
+                        Image(systemName: "paperplane.fill").foregroundColor(.black).font(.title)
+                    })
+                        
+                        
+                    }
+                )
+        }
+       
+       
     }
 }
 
