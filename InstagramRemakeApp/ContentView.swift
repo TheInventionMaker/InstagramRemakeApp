@@ -10,9 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack{
-            Text("Hello")
-            Text("Worl")
+        ScrollView{
+            VStack{
+                Rectangle()
+                    .frame(width: 300, height: 400, alignment: .center)
+                    .foregroundColor(.gray)
+                .cornerRadius(40)
+            }
         }
     }
 }
