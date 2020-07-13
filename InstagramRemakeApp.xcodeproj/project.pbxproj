@@ -15,6 +15,11 @@
 		FFC2CF1424BC8E0E00BFEDB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC2CF1224BC8E0E00BFEDB3 /* LaunchScreen.storyboard */; };
 		FFC2CF1F24BC8E0E00BFEDB3 /* InstagramRemakeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF1E24BC8E0E00BFEDB3 /* InstagramRemakeAppTests.swift */; };
 		FFC2CF2A24BC8E0E00BFEDB3 /* InstagramRemakeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF2924BC8E0E00BFEDB3 /* InstagramRemakeAppUITests.swift */; };
+		FFC2CF3824BC98E600BFEDB3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3724BC98E600BFEDB3 /* Home.swift */; };
+		FFC2CF3A24BC98EE00BFEDB3 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3924BC98EE00BFEDB3 /* Search.swift */; };
+		FFC2CF3C24BC990000BFEDB3 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3B24BC990000BFEDB3 /* Heart.swift */; };
+		FFC2CF3E24BC990600BFEDB3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3D24BC990600BFEDB3 /* Profile.swift */; };
+		FFC2CF4024BC991000BFEDB3 /* Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3F24BC991000BFEDB3 /* Plus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		FFC2CF2524BC8E0E00BFEDB3 /* InstagramRemakeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramRemakeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC2CF2924BC8E0E00BFEDB3 /* InstagramRemakeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramRemakeAppUITests.swift; sourceTree = "<group>"; };
 		FFC2CF2B24BC8E0E00BFEDB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC2CF3724BC98E600BFEDB3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		FFC2CF3924BC98EE00BFEDB3 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		FFC2CF3B24BC990000BFEDB3 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
+		FFC2CF3D24BC990600BFEDB3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FFC2CF3F24BC991000BFEDB3 /* Plus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,11 @@
 				FFC2CF0724BC8E0D00BFEDB3 /* AppDelegate.swift */,
 				FFC2CF0924BC8E0D00BFEDB3 /* SceneDelegate.swift */,
 				FFC2CF0B24BC8E0D00BFEDB3 /* ContentView.swift */,
+				FFC2CF3724BC98E600BFEDB3 /* Home.swift */,
+				FFC2CF3924BC98EE00BFEDB3 /* Search.swift */,
+				FFC2CF3B24BC990000BFEDB3 /* Heart.swift */,
+				FFC2CF3D24BC990600BFEDB3 /* Profile.swift */,
+				FFC2CF3F24BC991000BFEDB3 /* Plus.swift */,
 				FFC2CF0D24BC8E0E00BFEDB3 /* Assets.xcassets */,
 				FFC2CF1224BC8E0E00BFEDB3 /* LaunchScreen.storyboard */,
 				FFC2CF1524BC8E0E00BFEDB3 /* Info.plist */,
@@ -267,8 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC2CF3C24BC990000BFEDB3 /* Heart.swift in Sources */,
+				FFC2CF4024BC991000BFEDB3 /* Plus.swift in Sources */,
 				FFC2CF0824BC8E0D00BFEDB3 /* AppDelegate.swift in Sources */,
 				FFC2CF0A24BC8E0D00BFEDB3 /* SceneDelegate.swift in Sources */,
+				FFC2CF3E24BC990600BFEDB3 /* Profile.swift in Sources */,
+				FFC2CF3A24BC98EE00BFEDB3 /* Search.swift in Sources */,
+				FFC2CF3824BC98E600BFEDB3 /* Home.swift in Sources */,
 				FFC2CF0C24BC8E0D00BFEDB3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

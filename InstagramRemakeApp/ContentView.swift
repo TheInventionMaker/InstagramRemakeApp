@@ -12,28 +12,28 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            Text("The content of the first view")
+            Home()
               .tabItem {
                  Image(systemName: "house.fill").font(.title)
                  
                }
-            Text("The content of the second view")
+           Search()
               .tabItem {
                  Image(systemName: "magnifyingglass").font(.title)
                  
                }
                 
-            Text("The content of the third view")
+            Plus()
             .tabItem {
                 Image(systemName: "plus.app").font(.title)
                
              }
-            Text("The content of the fourth view")
+            Heart()
             .tabItem {
                 Image(systemName: "heart").font(.title)
                    
             }
-            Text("The content of the fifth view")
+            Profile()
             .tabItem {
                 Image(systemName: "person.circle").font(.title)
                    
