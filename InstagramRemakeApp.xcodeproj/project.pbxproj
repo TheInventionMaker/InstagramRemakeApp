@@ -21,6 +21,8 @@
 		FFC2CF3E24BC990600BFEDB3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3D24BC990600BFEDB3 /* Profile.swift */; };
 		FFC2CF4024BC991000BFEDB3 /* Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF3F24BC991000BFEDB3 /* Plus.swift */; };
 		FFC2CF4324BCAC7A00BFEDB3 /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFC2CF4224BCAC7A00BFEDB3 /* Billabong.ttf */; };
+		FFC2CF4724BD014800BFEDB3 /* TopProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF4624BD014800BFEDB3 /* TopProfileImage.swift */; };
+		FFC2CF4924BD36B500BFEDB3 /* TopProfileScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF4824BD36B500BFEDB3 /* TopProfileScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		FFC2CF3D24BC990600BFEDB3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FFC2CF3F24BC991000BFEDB3 /* Plus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plus.swift; sourceTree = "<group>"; };
 		FFC2CF4224BCAC7A00BFEDB3 /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Billabong.ttf; path = ../../../Downloads/Billabong.ttf; sourceTree = "<group>"; };
+		FFC2CF4624BD014800BFEDB3 /* TopProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProfileImage.swift; sourceTree = "<group>"; };
+		FFC2CF4824BD36B500BFEDB3 /* TopProfileScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProfileScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				FFC2CF0924BC8E0D00BFEDB3 /* SceneDelegate.swift */,
 				FFC2CF0B24BC8E0D00BFEDB3 /* ContentView.swift */,
 				FFC2CF3724BC98E600BFEDB3 /* Home.swift */,
+				FFC2CF4624BD014800BFEDB3 /* TopProfileImage.swift */,
+				FFC2CF4824BD36B500BFEDB3 /* TopProfileScrollView.swift */,
 				FFC2CF3924BC98EE00BFEDB3 /* Search.swift */,
 				FFC2CF3B24BC990000BFEDB3 /* Heart.swift */,
 				FFC2CF3D24BC990600BFEDB3 /* Profile.swift */,
@@ -288,8 +294,10 @@
 			files = (
 				FFC2CF3C24BC990000BFEDB3 /* Heart.swift in Sources */,
 				FFC2CF4024BC991000BFEDB3 /* Plus.swift in Sources */,
+				FFC2CF4724BD014800BFEDB3 /* TopProfileImage.swift in Sources */,
 				FFC2CF0824BC8E0D00BFEDB3 /* AppDelegate.swift in Sources */,
 				FFC2CF0A24BC8E0D00BFEDB3 /* SceneDelegate.swift in Sources */,
+				FFC2CF4924BD36B500BFEDB3 /* TopProfileScrollView.swift in Sources */,
 				FFC2CF3E24BC990600BFEDB3 /* Profile.swift in Sources */,
 				FFC2CF3A24BC98EE00BFEDB3 /* Search.swift in Sources */,
 				FFC2CF3824BC98E600BFEDB3 /* Home.swift in Sources */,

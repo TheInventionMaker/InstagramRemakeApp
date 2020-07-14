@@ -7,11 +7,26 @@
 //
 
 import SwiftUI
+struct HiddenNavigationBar: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarHidden(true)
+    }
+}
 
+extension View {
+    func hiddenNavigationBarStyle() -> some View {
+        modifier( HiddenNavigationBar() )
+    }
+}
 struct ContentView: View {
     
     var body: some View {
-        NavigationView {
+      NavigationView {
+       // FileBrowserView(jsonFromCall: URLRetrieve(URLtoFetch: applicationDelegate.apiURL))
+        
+        
              TabView {
                        Home()
                          .tabItem {
@@ -40,37 +55,38 @@ struct ContentView: View {
                               
                        }
                        }.accentColor(Color.black)
-                //.navigationBarTitle("Welcome")
-            
-                .navigationBarItems(leading:
-                    HStack{
+                
+            .navigationBarItems(leading:
+                HStack{
+                Button(action: {
+                    print("camera hit")
+                    
+                }, label: {
+                    Image(systemName: "camera.fill").foregroundColor(.black).font(.title)
+                })
+                    Text("Instanote")
+                        .padding(.leading, 70)
+                        
+                   .font(Font.custom("Billabong", size: 50))
+                },
+                trailing:
+                HStack(spacing: 20){
                     Button(action: {
-                        print("camera hit")
-                        
+                        print("tv hit")
                     }, label: {
-                        Image(systemName: "camera.fill").foregroundColor(.black).font(.title)
+                        Image(systemName: "tv").foregroundColor(.black).font(.title)
                     })
-                        Text("Instanote")
-                            .padding(.leading, 70)
-                            
-                       .font(Font.custom("Billabong", size: 50))
-                    },
-                    trailing:
-                    HStack(spacing: 20){
-                        Button(action: {
-                            print("tv hit")
-                        }, label: {
-                            Image(systemName: "tv").foregroundColor(.black).font(.title)
-                        })
-                        Button(action: {
-                        print("Paperplane hit")
-                    }, label: {
-                        Image(systemName: "paperplane.fill").foregroundColor(.black).font(.title)
-                    })
-                        
-                        
-                    }
-                )
+                    Button(action: {
+                    print("Paperplane hit")
+                }, label: {
+                    Image(systemName: "paperplane.fill").foregroundColor(.black).font(.title)
+                })
+                    
+                    
+                }
+            )
+        
+        .hiddenNavigationBarStyle()
         }
        
        
