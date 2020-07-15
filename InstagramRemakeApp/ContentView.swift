@@ -10,7 +10,7 @@ import SwiftUI
 struct HiddenNavigationBar: ViewModifier {
     func body(content: Content) -> some View {
         content
-        .navigationBarTitle("", displayMode: .inline)
+            .navigationBarTitle("", displayMode: .inline)
         .navigationBarHidden(true)
     }
 }
@@ -28,7 +28,7 @@ struct ContentView: View {
         
         
              TabView {
-                       Home()
+                Home()
                          .tabItem {
                             Image(systemName: "house.fill").font(.title)
                             

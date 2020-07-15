@@ -11,7 +11,7 @@ import SwiftUI
 struct TopProfileScrollView: View {
     var body: some View {
         VStack(spacing: 00){
-            HStack{
+            /*HStack{
                 Text("Stories")
                     .fontWeight(.semibold)
                     .font(.headline)
@@ -28,7 +28,7 @@ struct TopProfileScrollView: View {
                     }
                         .foregroundColor(.black)
                 }).padding(.horizontal, 20)
-            }
+            }*/
         ScrollView(.horizontal){
             HStack(spacing: -50){
                 ForEach(0..<11){ n in
