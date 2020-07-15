@@ -13,6 +13,12 @@ struct Home: View {
         VStack{
            TopProfileScrollView()
             .padding(.top, 20)
+            ScrollView{
+                ForEach(0..<11){ n in
+                    AddPost()
+                }
+            }
+            
             Spacer()
         }
     }
