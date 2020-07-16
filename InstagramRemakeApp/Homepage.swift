@@ -10,12 +10,14 @@ import SwiftUI
 
 struct Homepage: View {
     var name: String
-    var description: String
+    @State var description: String
     var posts: String
     var followers: String
     var following: String
     var imageRef: String
-    
+    var mine: Bool
+    @State var descriptionEdit = ""
+    @State var editMode = false
     var body: some View {
         VStack(alignment: .leading){
             HStack{
@@ -47,6 +49,7 @@ struct Homepage: View {
                         .font(.body)
                     }
                 }
+                if mine == false{
                 HStack{
                     Button(action: {
                         
@@ -90,19 +93,61 @@ struct Homepage: View {
                                 .stroke(Color(UIColor.lightGray), lineWidth: 1)
                         )
                 }
-               
+                }else{
+                HStack{
+                    Button(action: {
+                        self.editMode = true
+                    }, label: {
+                        Text("Edit Profile")
+                            .fontWeight(.semibold)
+                            .font(.headline)
+                            .foregroundColor(.black)
+                    })
+                        .padding(.vertical, 5.0)
+                        .padding(.horizontal, 70)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color(UIColor.lightGray), lineWidth: 1)
+                        )
+                    
+                    }.padding(9)
+                }
             }.offset(x: -25, y: 0)
         }
             Text(name)
-                .fontWeight(.semibold)
-                .font(.headline)
-                .padding(.leading, 30.0)
-                .padding(.bottom, 10)
-            Text(description)
-            .fontWeight(.light)
-            .font(.subheadline)
+            .fontWeight(.semibold)
+            .font(.headline)
             .padding(.leading, 30.0)
+            .padding(.bottom, 10)
+            if editMode == false{
             
+                Text(description)
+                .fontWeight(.light)
+                .font(.subheadline)
+                .padding(.leading, 30.0)
+            }else{
+                TextField("Enter new description", text: $descriptionEdit)
+                    .padding()
+                Button(action: {
+                       self.editMode = false
+                    self.description = self.descriptionEdit
+                    UserDefaults().setDescription(self.description)
+                    FirebaseInitalization().setDecriptionData(UserDefaults().getDescription())
+                   }, label: {
+                       Text("Done Editing")
+                           .fontWeight(.semibold)
+                           .font(.headline)
+                           .foregroundColor(.black)
+                   })
+                       .padding(.vertical, 5.0)
+                       .padding(.horizontal, 70)
+                       .overlay(
+                           RoundedRectangle(cornerRadius: 5)
+                               .stroke(Color(UIColor.lightGray), lineWidth: 1)
+                       )
+                   
+                   .padding(9)
+            }
             //Replace the below things with the people that this user is following
             TopProfileScrollView()
             
@@ -113,6 +158,6 @@ struct Homepage: View {
 
 struct Homepage_Previews: PreviewProvider {
     static var previews: some View {
-        Homepage(name: "JRamo", description: "I code and stuff.", posts: "2", followers: "0", following: "6", imageRef: "profileimage")
+        Homepage(name: "JRamo", description: "I code and stuff.", posts: "2", followers: "0", following: "6", imageRef: "profileimage", mine: true)
     }
 }

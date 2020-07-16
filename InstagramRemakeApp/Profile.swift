@@ -20,7 +20,7 @@ struct Profile: View {
             //Text("Loading...")
             
             if posts{
-                Homepage(name: UserDefaults().getUsername(), description: UserDefaults().getDescription(), posts: postsNum, followers: followers, following: following, imageRef: UserDefaults().getImageRef())
+                Homepage(name: UserDefaults().getUsername(), description: UserDefaults().getDescription(), posts: postsNum, followers: followers, following: following, imageRef: UserDefaults().getImageRef(), mine: true)
             }
             
         }.onAppear{

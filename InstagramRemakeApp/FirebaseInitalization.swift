@@ -46,7 +46,19 @@ class FirebaseInitalization: NSObject {
         
 
     }
-    
+    func setDecriptionData(_ : String){
+        let docData: [String: Any] = [
+            "description": UserDefaults().getDescription(),
+            ]
+        
+        db.collection("users").document(UserDefaults().getUsername()).setData(docData, merge: true) { err in
+            if let err = err {
+                print("Error writing document: \(err)")
+            } else {
+                print("Document successfully written!")
+            }
+        }
+    }
     func refreshData(){
         //Refreshes Followers, Following, and Posts
         let docRef = self.db.collection("users").document(UserDefaults().getUsername())
@@ -61,12 +73,13 @@ class FirebaseInitalization: NSObject {
                         let following = document.data()!["following"]
                         print("Test: \(following as? [Any])")
                         UserDefaults().setFollowing(String((following as? [Any])!.count))
-                        
+                        UserDefaults().setDescription(document.data()!["description"] as! String)
                         UserDefaults().setPosts(String((document.data()!["posts"] as? [String: Any])!.count))
                        } else {
                            print("Document does not exist")
                        }
                    }
+        
     
     }
 }
