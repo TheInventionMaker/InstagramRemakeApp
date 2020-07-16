@@ -9,6 +9,13 @@
 import SwiftUI
 
 struct Homepage: View {
+    var name: String
+    var description: String
+    var posts: String
+    var followers: String
+    var following: String
+    var imageRef: String
+    
     var body: some View {
         VStack(alignment: .leading){
             HStack{
@@ -16,7 +23,7 @@ struct Homepage: View {
             VStack{
                 HStack(spacing: 20){
                     VStack{
-                       Text("5,076")
+                       Text("\(posts)")
                         .fontWeight(.semibold)
                         .font(.title)
                         Text("posts")
@@ -24,7 +31,7 @@ struct Homepage: View {
                             .font(.headline)
                     }
                     VStack{
-                       Text("3.3M")
+                       Text("\(followers)")
                         .fontWeight(.semibold)
                         .font(.title)
                         Text("followers")
@@ -32,7 +39,7 @@ struct Homepage: View {
                         .font(.body)
                     }
                     VStack{
-                       Text("963")
+                       Text("\(following)")
                         .fontWeight(.semibold)
                         .font(.title)
                         Text("following")
@@ -86,12 +93,12 @@ struct Homepage: View {
                
             }.offset(x: -25, y: 0)
         }
-            Text("JRamo")
+            Text(name)
                 .fontWeight(.semibold)
                 .font(.headline)
                 .padding(.leading, 30.0)
                 .padding(.bottom, 10)
-            Text("I teach Swift, and help others undestand the vast world of programming that is iOS Development.")
+            Text(description)
             .fontWeight(.light)
             .font(.subheadline)
             .padding(.leading, 30.0)
@@ -106,6 +113,6 @@ struct Homepage: View {
 
 struct Homepage_Previews: PreviewProvider {
     static var previews: some View {
-        Homepage()
+        Homepage(name: "JRamo", description: "I code and stuff.", posts: "2", followers: "0", following: "6", imageRef: "profileimage")
     }
 }

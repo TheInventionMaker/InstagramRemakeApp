@@ -21,8 +21,9 @@ extension View {
     }
 }
 struct ContentView: View {
-    
+    @State var signedUp = false
     var body: some View {
+        ZStack{
       NavigationView {
        // FileBrowserView(jsonFromCall: URLRetrieve(URLtoFetch: applicationDelegate.apiURL))
         
@@ -86,9 +87,20 @@ struct ContentView: View {
                 }
             )
         
-        .hiddenNavigationBarStyle()
         }
        
+        .hiddenNavigationBarStyle()
+            .onAppear{
+                //UserDefaults().setSignUp(false)
+                if UserDefaults().getSignUp(){
+                    self.signedUp = true
+                }
+            
+            }
+            SignUpPage().opacity(self.signedUp ? 0 : 1)
+        }
+            
+        
        
     }
 }

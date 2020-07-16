@@ -28,6 +28,10 @@
 		FFC2CF4924BD36B500BFEDB3 /* TopProfileScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF4824BD36B500BFEDB3 /* TopProfileScrollView.swift */; };
 		FFE66AF424C08712001B6C54 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66AF324C08711001B6C54 /* Homepage.swift */; };
 		FFE66AF624C08F20001B6C54 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66AF524C08F20001B6C54 /* ImageGridView.swift */; };
+		FFE66AF824C0BCF6001B6C54 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66AF724C0BCF6001B6C54 /* UserDefaults.swift */; };
+		FFE66AFA24C0BD18001B6C54 /* FirebaseInitalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66AF924C0BD18001B6C54 /* FirebaseInitalization.swift */; };
+		FFE66AFC24C0C0A1001B6C54 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66AFB24C0C0A1001B6C54 /* SignUpPage.swift */; };
+		FFE66AFE24C0C1CE001B6C54 /* ModernTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE66AFD24C0C1CE001B6C54 /* ModernTextView.swift */; };
 		FFEF996A24BF6BFA00072252 /* AddPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF996924BF6BFA00072252 /* AddPost.swift */; };
 		FFEF996D24BFC6E200072252 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFEF996C24BFC6E200072252 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -83,6 +87,10 @@
 		FFC2CF4824BD36B500BFEDB3 /* TopProfileScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProfileScrollView.swift; sourceTree = "<group>"; };
 		FFE66AF324C08711001B6C54 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		FFE66AF524C08F20001B6C54 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
+		FFE66AF724C0BCF6001B6C54 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		FFE66AF924C0BD18001B6C54 /* FirebaseInitalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInitalization.swift; sourceTree = "<group>"; };
+		FFE66AFB24C0C0A1001B6C54 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
+		FFE66AFD24C0C1CE001B6C54 /* ModernTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernTextView.swift; sourceTree = "<group>"; };
 		FFEF996924BF6BFA00072252 /* AddPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPost.swift; sourceTree = "<group>"; };
 		FFEF996C24BFC6E200072252 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/InstanoteResources/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,7 +178,11 @@
 				FFC2CF4624BD014800BFEDB3 /* TopProfileImage.swift */,
 				FFC2CF0924BC8E0D00BFEDB3 /* SceneDelegate.swift */,
 				FFC2CF0B24BC8E0D00BFEDB3 /* ContentView.swift */,
+				FFE66AF724C0BCF6001B6C54 /* UserDefaults.swift */,
+				FFE66AF924C0BD18001B6C54 /* FirebaseInitalization.swift */,
 				FFE66AF324C08711001B6C54 /* Homepage.swift */,
+				FFE66AFB24C0C0A1001B6C54 /* SignUpPage.swift */,
+				FFE66AFD24C0C1CE001B6C54 /* ModernTextView.swift */,
 				FFE66AF524C08F20001B6C54 /* ImageGridView.swift */,
 				FFEF996924BF6BFA00072252 /* AddPost.swift */,
 				FFC2CF3924BC98EE00BFEDB3 /* Search.swift */,
@@ -461,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE66AFA24C0BD18001B6C54 /* FirebaseInitalization.swift in Sources */,
 				FFC2CF3C24BC990000BFEDB3 /* Heart.swift in Sources */,
 				FFC2CF4024BC991000BFEDB3 /* Plus.swift in Sources */,
 				FFC2CF4724BD014800BFEDB3 /* TopProfileImage.swift in Sources */,
@@ -473,6 +486,9 @@
 				FFC2CF3E24BC990600BFEDB3 /* Profile.swift in Sources */,
 				FFC2CF3A24BC98EE00BFEDB3 /* Search.swift in Sources */,
 				FFC2CF3824BC98E600BFEDB3 /* Home.swift in Sources */,
+				FFE66AF824C0BCF6001B6C54 /* UserDefaults.swift in Sources */,
+				FFE66AFE24C0C1CE001B6C54 /* ModernTextView.swift in Sources */,
+				FFE66AFC24C0C0A1001B6C54 /* SignUpPage.swift in Sources */,
 				FFC2CF0C24BC8E0D00BFEDB3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
