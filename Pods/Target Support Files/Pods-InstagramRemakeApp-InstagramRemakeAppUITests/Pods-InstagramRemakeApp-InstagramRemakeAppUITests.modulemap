@@ -1,0 +1,6 @@
+framework module Pods_InstagramRemakeApp_InstagramRemakeAppUITests {
+  umbrella header "Pods-InstagramRemakeApp-InstagramRemakeAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
