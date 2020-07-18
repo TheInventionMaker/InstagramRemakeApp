@@ -10,6 +10,16 @@
 		CA0653F5707F9B6254325197 /* Pods_InstagramRemakeAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4643529F47970BC795CA86DC /* Pods_InstagramRemakeAppTests.framework */; };
 		D7B96856DA7DA8558F90ACE1 /* Pods_InstagramRemakeApp_InstagramRemakeAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B36D73F7D0AD7C4E3C252A /* Pods_InstagramRemakeApp_InstagramRemakeAppUITests.framework */; };
 		F1E53A1EC1A558B134CB576F /* Pods_InstagramRemakeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8709853DFABB29A51DCCCD /* Pods_InstagramRemakeApp.framework */; };
+		FF3B1CEB24C262DB00F1F588 /* loginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3B1CEA24C262DB00F1F588 /* loginPage.swift */; };
+		FF5376A424C1E01D004DC04A /* LoginOrSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376A324C1E01D004DC04A /* LoginOrSignUp.swift */; };
+		FF5376A624C1E57B004DC04A /* emailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376A524C1E57B004DC04A /* emailPage.swift */; };
+		FF5376A824C1EDC1004DC04A /* nameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376A724C1EDC1004DC04A /* nameView.swift */; };
+		FF5376AA24C1EF4D004DC04A /* createPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376A924C1EF4D004DC04A /* createPassword.swift */; };
+		FF5376AC24C1F0FB004DC04A /* createUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376AB24C1F0FB004DC04A /* createUsername.swift */; };
+		FF5376AE24C20551004DC04A /* addPofilePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376AD24C20551004DC04A /* addPofilePhoto.swift */; };
+		FF5376B024C20C33004DC04A /* newUserWelcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376AF24C20C33004DC04A /* newUserWelcome.swift */; };
+		FF5376B224C20CB1004DC04A /* addBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5376B124C20CB1004DC04A /* addBio.swift */; };
+		FF54A50C24C224FD00EE5831 /* EditEverythingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF54A50B24C224FD00EE5831 /* EditEverythingView.swift */; };
 		FFC2CF0824BC8E0D00BFEDB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF0724BC8E0D00BFEDB3 /* AppDelegate.swift */; };
 		FFC2CF0A24BC8E0D00BFEDB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF0924BC8E0D00BFEDB3 /* SceneDelegate.swift */; };
 		FFC2CF0C24BC8E0D00BFEDB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2CF0B24BC8E0D00BFEDB3 /* ContentView.swift */; };
@@ -63,6 +73,16 @@
 		75B36D73F7D0AD7C4E3C252A /* Pods_InstagramRemakeApp_InstagramRemakeAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstagramRemakeApp_InstagramRemakeAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A8D3ADB7604641B4BD9128 /* Pods-InstagramRemakeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramRemakeApp.debug.xcconfig"; path = "Target Support Files/Pods-InstagramRemakeApp/Pods-InstagramRemakeApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A3BC05F3E7413CBFC37D7361 /* Pods-InstagramRemakeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstagramRemakeAppTests.release.xcconfig"; path = "Target Support Files/Pods-InstagramRemakeAppTests/Pods-InstagramRemakeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FF3B1CEA24C262DB00F1F588 /* loginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginPage.swift; sourceTree = "<group>"; };
+		FF5376A324C1E01D004DC04A /* LoginOrSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSignUp.swift; sourceTree = "<group>"; };
+		FF5376A524C1E57B004DC04A /* emailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailPage.swift; sourceTree = "<group>"; };
+		FF5376A724C1EDC1004DC04A /* nameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameView.swift; sourceTree = "<group>"; };
+		FF5376A924C1EF4D004DC04A /* createPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPassword.swift; sourceTree = "<group>"; };
+		FF5376AB24C1F0FB004DC04A /* createUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createUsername.swift; sourceTree = "<group>"; };
+		FF5376AD24C20551004DC04A /* addPofilePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPofilePhoto.swift; sourceTree = "<group>"; };
+		FF5376AF24C20C33004DC04A /* newUserWelcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newUserWelcome.swift; sourceTree = "<group>"; };
+		FF5376B124C20CB1004DC04A /* addBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBio.swift; sourceTree = "<group>"; };
+		FF54A50B24C224FD00EE5831 /* EditEverythingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEverythingView.swift; sourceTree = "<group>"; };
 		FFC2CF0424BC8E0D00BFEDB3 /* InstagramRemakeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramRemakeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC2CF0724BC8E0D00BFEDB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFC2CF0924BC8E0D00BFEDB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +201,17 @@
 				FFE66AF724C0BCF6001B6C54 /* UserDefaults.swift */,
 				FFE66AF924C0BD18001B6C54 /* FirebaseInitalization.swift */,
 				FFE66AF324C08711001B6C54 /* Homepage.swift */,
+				FF54A50B24C224FD00EE5831 /* EditEverythingView.swift */,
 				FFE66AFB24C0C0A1001B6C54 /* SignUpPage.swift */,
+				FF3B1CEA24C262DB00F1F588 /* loginPage.swift */,
+				FF5376A324C1E01D004DC04A /* LoginOrSignUp.swift */,
+				FF5376A724C1EDC1004DC04A /* nameView.swift */,
+				FF5376A924C1EF4D004DC04A /* createPassword.swift */,
+				FF5376AB24C1F0FB004DC04A /* createUsername.swift */,
+				FF5376A524C1E57B004DC04A /* emailPage.swift */,
+				FF5376AD24C20551004DC04A /* addPofilePhoto.swift */,
+				FF5376B124C20CB1004DC04A /* addBio.swift */,
+				FF5376AF24C20C33004DC04A /* newUserWelcome.swift */,
 				FFE66AFD24C0C1CE001B6C54 /* ModernTextView.swift */,
 				FFE66AF524C08F20001B6C54 /* ImageGridView.swift */,
 				FFEF996924BF6BFA00072252 /* AddPost.swift */,
@@ -481,14 +511,24 @@
 				FFC2CF0824BC8E0D00BFEDB3 /* AppDelegate.swift in Sources */,
 				FFC2CF0A24BC8E0D00BFEDB3 /* SceneDelegate.swift in Sources */,
 				FFE66AF624C08F20001B6C54 /* ImageGridView.swift in Sources */,
+				FF5376A424C1E01D004DC04A /* LoginOrSignUp.swift in Sources */,
 				FFC2CF4924BD36B500BFEDB3 /* TopProfileScrollView.swift in Sources */,
 				FFEF996A24BF6BFA00072252 /* AddPost.swift in Sources */,
+				FF5376A624C1E57B004DC04A /* emailPage.swift in Sources */,
+				FF5376B024C20C33004DC04A /* newUserWelcome.swift in Sources */,
 				FFC2CF3E24BC990600BFEDB3 /* Profile.swift in Sources */,
 				FFC2CF3A24BC98EE00BFEDB3 /* Search.swift in Sources */,
 				FFC2CF3824BC98E600BFEDB3 /* Home.swift in Sources */,
 				FFE66AF824C0BCF6001B6C54 /* UserDefaults.swift in Sources */,
+				FF54A50C24C224FD00EE5831 /* EditEverythingView.swift in Sources */,
 				FFE66AFE24C0C1CE001B6C54 /* ModernTextView.swift in Sources */,
+				FF5376AC24C1F0FB004DC04A /* createUsername.swift in Sources */,
+				FF3B1CEB24C262DB00F1F588 /* loginPage.swift in Sources */,
+				FF5376A824C1EDC1004DC04A /* nameView.swift in Sources */,
+				FF5376AA24C1EF4D004DC04A /* createPassword.swift in Sources */,
 				FFE66AFC24C0C0A1001B6C54 /* SignUpPage.swift in Sources */,
+				FF5376AE24C20551004DC04A /* addPofilePhoto.swift in Sources */,
+				FF5376B224C20CB1004DC04A /* addBio.swift in Sources */,
 				FFC2CF0C24BC8E0D00BFEDB3 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

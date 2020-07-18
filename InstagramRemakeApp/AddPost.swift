@@ -7,15 +7,17 @@
 //
 
 import SwiftUI
-
+import Firebase
 struct AddPost: View {
     var likes = 29456
+    @State var begin = true
+    @State var newImage = profileImage
     var body: some View {
         VStack(alignment: .leading, spacing: 10){
-            
+            if begin{
             HStack(spacing: 0){
                 
-            TopProfileImage(w: 75, h: 50, imageName: "profileimage", border: true, n: "", nS: 1.0)
+                TopProfileImage(w: 75, h: 50, image: newImage!, border: true, n: "", nS: 1.0)
                
                     Text("JRamo")
                         .fontWeight(.semibold)
@@ -77,7 +79,7 @@ struct AddPost: View {
             
             Text("Jramo - A Hexals 3 pack. WS2812B led strips, with 13 leds per Hexal. Controlled via Bluetooth with an iOS app.")
                 .padding([.leading, .bottom, .trailing], 10)
-            
+            }
             
             
         }

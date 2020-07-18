@@ -11,14 +11,14 @@ import SwiftUI
 struct TopProfileImage: View {
     var width: CGFloat
     var height: CGFloat
-    var img: String
+    var img: UIImage
     var ring: Bool
     var name: String
     var nameScale: CGFloat
-    init(w: CGFloat, h: CGFloat, imageName: String, border: Bool, n: String, nS: CGFloat){
+    init(w: CGFloat, h: CGFloat, image: UIImage, border: Bool, n: String, nS: CGFloat){
         width = w
         height = h
-        img = imageName
+        img = image
         ring = border
         name = n
         nameScale = nS
@@ -35,7 +35,8 @@ struct TopProfileImage: View {
                            .foregroundColor(.white)
                            .scaleEffect(0.9)
                 .opacity(ring ? 1 : 0)
-               Image(img).resizable()
+                
+                Image(uiImage: img).resizable()
                                      .frame(width: width, height: height, alignment: .center)
                                  .clipShape(Circle())
                               
@@ -56,6 +57,6 @@ struct TopProfileImage: View {
 
 struct TopProfileImage_Previews: PreviewProvider {
     static var previews: some View {
-        TopProfileImage(w: 300, h: 200, imageName: "profileimage", border: true, n: "JRamo", nS: 1.0)
+        TopProfileImage(w: 300, h: 200, image: UIImage(named: "profileimage")!, border: true, n: "JRamo", nS: 1.0)
     }
 }

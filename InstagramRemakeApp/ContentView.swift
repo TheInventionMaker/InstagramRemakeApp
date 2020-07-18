@@ -20,17 +20,25 @@ extension View {
         modifier( HiddenNavigationBar() )
     }
 }
+import Firebase
 struct ContentView: View {
     @State var signedUp = false
+    let storage = Storage.storage()
+    let storageRef = Storage.storage().reference()
+    @State var begin = false
+    @State var newImage = profileImage
     var body: some View {
+        //Text("Jelllo")
+        
         ZStack{
+            if begin{
       NavigationView {
        // FileBrowserView(jsonFromCall: URLRetrieve(URLtoFetch: applicationDelegate.apiURL))
         
         
              TabView {
                 Home()
-                         .tabItem {
+                        .tabItem {
                             Image(systemName: "house.fill").font(.title)
                             
                           }
@@ -90,16 +98,45 @@ struct ContentView: View {
         }
        
         .hiddenNavigationBarStyle()
-            .onAppear{
-                //UserDefaults().setSignUp(false)
+            
+            LoginOrSignUp().opacity(self.signedUp ? 0 : 1)
+            }
+        }
+        
+          .onAppear{
+            //FirebaseInitalization().setUpUserData()
+            print("Loaded")
+                let exRef = UserDefaults().getUsername()
+                let islandRef = self.storageRef.child("\(exRef)/PI")
+            //let storageRef = Storage.storage().reference()
+                // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+                islandRef.getData(maxSize: 100 * 1024 * 1024) { data, error in
+                  if let error = error {
+                    // Uh-oh, an error occurred!
+                    print(error)
+                  } else {
+                    print("called")
+                    // Data for "images/island.jpg" is returned
+                    if exRef != ""{
+                    let image = UIImage(data: data!)
+                    print(image)
+                       profileImage = image
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                        self.begin.toggle()
+                    })
+                    }else{
+                         self.begin.toggle()
+                    }
+                  }
+                }
+                    
+            //self.begin.toggle()
+                UserDefaults().setSignUp(true)
                 if UserDefaults().getSignUp(){
                     self.signedUp = true
                 }
-            
+                
             }
-            SignUpPage().opacity(self.signedUp ? 0 : 1)
-        }
-            
         
        
     }

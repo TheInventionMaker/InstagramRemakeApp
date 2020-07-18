@@ -82,13 +82,20 @@ class UserDefaults: NSObject {
         Foundation.UserDefaults.standard.synchronize()
     }
     func getFollowing() -> String{
-        return Foundation.UserDefaults.standard.string(forKey: "following") ?? ""
+        return Foundation.UserDefaults.standard.string(forKey: "following") ?? "0"
     }
     func setPosts(_ value: String){
         Foundation.UserDefaults.standard.set(value, forKey: "posts")
         Foundation.UserDefaults.standard.synchronize()
     }
     func getPosts() -> String{
-        return Foundation.UserDefaults.standard.string(forKey: "posts") ?? ""
+        return Foundation.UserDefaults.standard.string(forKey: "posts") ?? "0"
     }
+    func setStories(_ value: String){
+           Foundation.UserDefaults.standard.set(value, forKey: "stories")
+           Foundation.UserDefaults.standard.synchronize()
+       }
+       func getStories() -> String{
+           return Foundation.UserDefaults.standard.string(forKey: "stories") ?? "0"
+       }
 }
